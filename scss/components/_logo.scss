@@ -1,0 +1,22 @@
+.logo-block {
+  display: none;
+  @media #{$tablet} {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 25px;
+  }
+}
+
+.logo-line {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 45px;
+  @media #{$tablet} {
+    display: none;
+  }
+}

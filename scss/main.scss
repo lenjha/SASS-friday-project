@@ -1,16 +1,17 @@
 @import
   "abstracts/modules",
+  "components/modules",
   "layout/modules";
 
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 .nav {
   position: fixed;
   height: 10vh;
+  top: 0;
   width: 100%;
   background: #dddddd;
   z-index: 999;
@@ -25,32 +26,21 @@
   }
 }
 
-.logo-block {
-  display: none;
-  @media #{$tablet} {
-    display: block;
-    width: 90%;
-    height: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 25px;
-  }
-}
-
-.logo-line {
-  width: 90%;
-  height: auto;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 45px;
-  @media #{$tablet} {
-    display: none;
-  }
-}
-
 .header {
   height: 30vh;
   background: #444444;
+  @media #{$mobile} {
+    margin-top: 10vh;
+  }
+}
+
+.header h1 {
+  font-size: 2rem;
+  width: 75%;
+  padding: 25px;
+  @media #{$mobile} {
+    padding: none;
+  }
 }
 
 .content {
@@ -75,6 +65,10 @@
   }
 }
 
+.grid:hover {
+  border: 2px white solid;
+}
+
 @media #{$desktop} {
   .grid-group {
     margin: 10vh auto 10vh;
@@ -88,13 +82,13 @@
 }
 
 body {
-  // background-image: url("../img/scenery-scroll/12.jpg");
-  // background-repeat: no-repeat;
-  // background-size: cover;
   background: #222222;
+  font-family: moon;
+  color: white;
 }
 
 footer {
   background: #444444;
-  height: 20vh;
+  height: 50px;
+  padding: 3%;
 }

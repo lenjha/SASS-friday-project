@@ -1,20 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif; }
-
-.nav {
-  position: fixed;
-  height: 10vh;
-  width: 100%;
-  background: #dddddd;
-  z-index: 999; }
-  @media (min-width: 650px) {
-    .nav {
-      height: 100vh;
-      width: 17vw;
-      right: 0; } }
-
+@font-face {
+  font-family: moon;
+  src: url("fonts/Moon_Light.otf"); }
 .logo-block {
   display: none; }
   @media (min-width: 650px) {
@@ -36,9 +22,37 @@
     .logo-line {
       display: none; } }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+.nav {
+  position: fixed;
+  height: 10vh;
+  top: 0;
+  width: 100%;
+  background: #dddddd;
+  z-index: 999; }
+  @media (min-width: 650px) {
+    .nav {
+      height: 100vh;
+      width: 17vw;
+      right: 0; } }
+
 .header {
   height: 30vh;
   background: #444444; }
+  @media (max-width: 649px) {
+    .header {
+      margin-top: 10vh; } }
+
+.header h1 {
+  font-size: 2rem;
+  width: 75%;
+  padding: 25px; }
+  @media (max-width: 649px) {
+    .header h1 {
+      padding: none; } }
 
 .content {
   height: auto;
@@ -63,6 +77,9 @@
       display: inline-block;
       margin: 0 auto; } }
 
+.grid:hover {
+  border: 2px white solid; }
+
 @media (min-width: 1000px) {
   .grid-group {
     margin: 10vh auto 10vh;
@@ -72,10 +89,13 @@
   height: auto; }
 
 body {
-  background: #222222; }
+  background: #222222;
+  font-family: moon;
+  color: white; }
 
 footer {
   background: #444444;
-  height: 20vh; }
+  height: 50px;
+  padding: 3%; }
 
 /*# sourceMappingURL=styles.css.map */
