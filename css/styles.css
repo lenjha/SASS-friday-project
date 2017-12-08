@@ -9,9 +9,14 @@
   width: 100%;
   background: #dddddd;
   z-index: 999; }
+  @media (min-width: 650px) {
+    .nav {
+      height: 100vh;
+      width: 20vw;
+      right: 0; } }
 
 .header {
-  height: 20vh;
+  height: 30vh;
   background: #444444; }
 
 .content {
@@ -24,34 +29,32 @@
   display: block;
   position: relative;
   margin: 10vh auto; }
+  @media (min-width: 650px) {
+    .grid {
+      width: 40vw;
+      height: 40vw;
+      display: inline-block;
+      margin: 0 auto; } }
+  @media (min-width: 1000px) {
+    .grid {
+      width: 20vw;
+      height: 20vw;
+      display: inline-block;
+      margin: 0 auto; } }
 
-@media (min-width: 650px) {
-  .grid {
-    width: 40vw;
-    height: 40vw;
-    display: inline-block;
-    margin: 0 auto; } }
 @media (min-width: 1000px) {
-  .grid {
-    width: 20vw;
-    height: 20vw;
-    display: inline-block;
-    margin: 0 auto; }
-
   .grid-group {
-    margin: 0 auto;
+    margin: 10vh auto 10vh;
     display: block; } }
 .grid img {
   width: 100%;
   height: auto; }
 
 body {
-  background-image: url("../img/scenery-scroll/12.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: #222222; }
 
 footer {
-  background: #dddddd;
-  height: 10vh; }
+  background: #444444;
+  height: 20vh; }
 
 /*# sourceMappingURL=styles.css.map */
