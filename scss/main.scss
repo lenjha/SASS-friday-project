@@ -36,20 +36,17 @@
 }
 
 .grid {
-  width: 70vw;
-  height: 70vw;
+  @include img-size-mobile;
   display: block;
   position: relative;
   margin: 10vh auto;
   @media #{$tablet} {
-    width: 40vw;
-    height: 40vw;
+    @include img-size-tablet;
     display: inline-block;
     margin: 0 auto;
   }
   @media #{$desktop} {
-    width: 20vw;
-    height: 20vw;
+    @include img-size-desktop;
     display: inline-block;
     margin: 0 auto;
   }
