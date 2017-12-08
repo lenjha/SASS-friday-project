@@ -7,12 +7,12 @@
   position: fixed;
   height: 10vh;
   width: 100%;
-  background: blue;
+  background: #dddddd;
   z-index: 999; }
 
 .header {
-  height: 15vh;
-  background: red; }
+  height: 20vh;
+  background: #444444; }
 
 .content {
   height: auto;
@@ -25,6 +25,22 @@
   position: relative;
   margin: 10vh auto; }
 
+@media (min-width: 650px) {
+  .grid {
+    width: 40vw;
+    height: 40vw;
+    display: inline-block;
+    margin: 0 auto; } }
+@media (min-width: 1000px) {
+  .grid {
+    width: 20vw;
+    height: 20vw;
+    display: inline-block;
+    margin: 0 auto; }
+
+  .grid-group {
+    margin: 0 auto;
+    display: block; } }
 .grid img {
   width: 100%;
   height: auto; }
@@ -35,7 +51,7 @@ body {
   background-size: cover; }
 
 footer {
-  background: yellow;
+  background: #dddddd;
   height: 10vh; }
 
 /*# sourceMappingURL=styles.css.map */
