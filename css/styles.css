@@ -12,8 +12,29 @@
   @media (min-width: 650px) {
     .nav {
       height: 100vh;
-      width: 20vw;
+      width: 17vw;
       right: 0; } }
+
+.logo-block {
+  display: none; }
+  @media (min-width: 650px) {
+    .logo-block {
+      display: block;
+      width: 90%;
+      height: auto;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 25px; } }
+
+.logo-line {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 45px; }
+  @media (min-width: 650px) {
+    .logo-line {
+      display: none; } }
 
 .header {
   height: 30vh;

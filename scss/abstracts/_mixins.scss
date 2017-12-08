@@ -1,14 +1,14 @@
-@mixin img-size-mobile {
+@mixin mobile {
   width: $grid-size-mobile;
   height: $grid-size-mobile;
 }
 
-@mixin img-size-tablet {
+@mixin tablet {
   width: $grid-size-tablet;
   height: $grid-size-tablet;
 }
 
-@mixin img-size-desktop {
+@mixin desktop {
   width: $grid-size-desktop;
   height: $grid-size-desktop;
 }
