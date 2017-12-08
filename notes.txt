@@ -1,0 +1,5 @@
+stylesheets organized using partials!
+  SCSS/PARTIALFOLDER/_PARTIALNAME.SCSS
+nesting is no more than four levels deep (?)
+effective variables
+responsive page - at least one breakpoint
