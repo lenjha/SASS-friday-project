@@ -1,0 +1,30 @@
+.grid {
+  @include mobile;
+  display: block;
+  position: relative;
+  margin: 10vh auto;
+  @media #{$tablet} {
+    @include tablet;
+    @include grid-flush;
+  }
+  @media #{$desktop} {
+    @include desktop;
+    @include grid-flush;
+  }
+}
+
+.grid:hover {
+  border: 2.5px white solid;
+}
+
+@media #{$desktop} {
+  .grid-group {
+    margin: 10vh auto 10vh;
+    display: block;
+  }
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+}

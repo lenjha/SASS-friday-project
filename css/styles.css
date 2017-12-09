@@ -22,42 +22,6 @@
     .logo-line {
       display: none; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-.nav {
-  position: fixed;
-  height: 10vh;
-  top: 0;
-  width: 100%;
-  background: #dddddd;
-  z-index: 999; }
-  @media (min-width: 650px) {
-    .nav {
-      height: 100vh;
-      width: 17vw;
-      right: 0; } }
-
-.header {
-  height: 30vh;
-  background: #444444; }
-  @media (max-width: 649px) {
-    .header {
-      margin-top: 10vh; } }
-
-.header h1 {
-  font-size: 2rem;
-  width: 75%;
-  padding: 25px; }
-  @media (max-width: 649px) {
-    .header h1 {
-      padding: none; } }
-
-.content {
-  height: auto;
-  position: relative; }
-
 .grid {
   width: 70vw;
   height: 70vw;
@@ -78,7 +42,7 @@
       margin: 0 auto; } }
 
 .grid:hover {
-  border: 2px white solid; }
+  border: 2.5px white solid; }
 
 @media (min-width: 1000px) {
   .grid-group {
@@ -88,10 +52,73 @@
   width: 100%;
   height: auto; }
 
+.header {
+  height: 30vh;
+  background: #444444; }
+  @media (max-width: 649px) {
+    .header {
+      margin-top: 10vh; } }
+
+.header h1 {
+  font-size: 2rem;
+  width: 75%;
+  padding: 25px; }
+  @media (max-width: 649px) {
+    .header h1 {
+      padding: none; } }
+  @media (min-width: 650px) {
+    .header h1 {
+      font-size: 2.5rem; } }
+  @media (min-width: 1000px) {
+    .header h1 {
+      font-size: 3rem; } }
+
+.nav {
+  position: fixed;
+  height: 10vh;
+  top: 0;
+  width: 100%;
+  background: #dddddd;
+  z-index: 999; }
+  @media (min-width: 650px) {
+    .nav {
+      height: 100vh;
+      width: 17vw;
+      right: 0; } }
+
+.nav-scroll {
+  display: none; }
+  @media (min-width: 650px) {
+    .nav-scroll {
+      display: block;
+      position: absolute;
+      bottom: 0; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background: #222222;
   font-family: moon;
   color: white; }
+
+.content {
+  height: auto;
+  position: relative; }
+
+.anchor-point {
+  display: none; }
+
+.scrollTop {
+  background: #bbbbbb;
+  color: #444444;
+  text-align: center;
+  width: 100%; }
+
+@media (min-width: 650px) {
+  .scroll-from-bottom {
+    display: none; } }
 
 footer {
   background: #444444;

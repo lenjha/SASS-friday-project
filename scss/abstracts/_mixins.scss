@@ -12,3 +12,8 @@
   width: $grid-size-desktop;
   height: $grid-size-desktop;
 }
+
+@mixin grid-flush {
+  display: inline-block;
+  margin: 0 auto;
+}
